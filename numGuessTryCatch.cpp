@@ -41,4 +41,6 @@ int main() {
         std::cout << guessNumber << " is not an integer";
         std::cout << "\n";
     }
+    // Add the finally statement
+    std::cout << "Thanks for playing ";
 }
