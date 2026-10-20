@@ -43,4 +43,5 @@ int main() {
     }
     // Add the finally statement
     std::cout << "Thanks for playing ";
+    std::cout << "\n";
 }
