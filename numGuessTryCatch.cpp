@@ -31,7 +31,7 @@ int main() {
 
     // check if user input is correct
         if (userNumber == randomNumber) {
-            std::cout << "your guessed correctly!!";
+            std::cout << "your guessed correctly!!" << std::endl;
         } else {
             std::cout << "you guessed wrong!!" << std::endl;
             std::cout << "The correct answer was : "
