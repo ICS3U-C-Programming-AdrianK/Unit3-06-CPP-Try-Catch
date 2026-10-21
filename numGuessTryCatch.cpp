@@ -19,26 +19,26 @@ int main() {
     randomNumber = dist(gen);
 
     // get the user guess number
-    std::string guessNumber;
+    std::string userGuessStr;
     std::cout << "\n";
-    std::cout << "Enter your guess number between  0 and 9 : ";
-    std::cin >> guessNumber;
+    std::cout << "Enter your guess number between  (0 and 9) : ";
+    std::cin >> userGuessStr;
 
     // cast the input into integer and check if it is right
     try {
-    // cast the user input to an integer
-    int userNumber = std::stoi(guessNumber);
+        // cast the user input to an integer
+        int userGuessInt = std::stoi(userGuessStr);
 
-    // check if user input is correct
-        if (userNumber == randomNumber) {
-            std::cout << "your guessed correctly!!" << std::endl;
+        // check if user input is correct
+        if (userGuessInt == randomNumber) {
+            std::cout << "your guessed correctly!!";
         } else {
             std::cout << "you guessed wrong!!" << std::endl;
             std::cout << "The correct answer was : "
             << randomNumber << std::endl;
         }
     } catch (std::invalid_argument) {
-        std::cout << guessNumber << " is not an integer";
+        std::cout << userGuessStr << " is not an integer";
         std::cout << "\n";
     }
     // Add the finally statement
